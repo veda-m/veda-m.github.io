@@ -1,0 +1,33 @@
+body {
+  background-color: black
+}
+
+h1 {
+  overflow: hidden;
+  border-right: .15em solid pink;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .30em;
+  animation:
+    typing 6s steps(40, end),
+    blink-caret .75s step-end infinite;
+  font-family: "Courier New";
+  text-align: center;
+  color: white
+}
+
+h3 {
+  color: white;
+  text-indent: 20%;
+  font-family: "Courier New";
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: pink; }
+}
